@@ -86,7 +86,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.pcm.16bit.enable=false \
     audio.offload.pcm.24bit.enable=true \
     audio.deep_buffer.media=true
-    
+
 # Reduce client buffer size for fast audio output tracks
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1
@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
 
 # Dalvik/HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-dalvik.vm.heapminfree=2m
+    dalvik.vm.heapminfree=2m
 
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
@@ -187,10 +187,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw 
-
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
+    libstagefrighthw
 
 # NFC
 ifeq ($(TARGET_BUILD_VARIANT),user)
