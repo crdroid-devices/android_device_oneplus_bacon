@@ -26,4 +26,7 @@
     <bool name="doze_display_state_supported">true</bool>
     <bool name="doze_pulse_on_pick_up">true</bool>
 
+    <!-- Doze: shake accelerometer threshold -->
+    <integer name="doze_shake_accelerometer_threshold">10</integer>
+
 </resources>
