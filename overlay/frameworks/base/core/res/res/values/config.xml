@@ -404,4 +404,6 @@
     <!-- Boolean to show HW keys enable/disbale option -->
     <bool name="config_hwKeysPref">true</bool>
 
+    <!-- Enable blur support -->
+    <bool name="config_ui_blur_enabled">true</bool>
 </resources>
